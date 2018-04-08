@@ -23,6 +23,12 @@ class test_python_group_task_1(unittest.TestCase):
         wd = self.open_page()
         self.login(wd)
         self.open_groups(wd)
+        self.create_group(wd)
+        wd.find_element_by_link_text("group page").click()
+        wd.find_element_by_link_text("Logout").click()
+        self.assertTrue(success)
+
+    def create_group(self, wd):
         wd.find_element_by_name("new").click()
         wd.find_element_by_name("group_name").click()
         wd.find_element_by_name("group_name").clear()
@@ -34,9 +40,6 @@ class test_python_group_task_1(unittest.TestCase):
         wd.find_element_by_name("group_footer").clear()
         wd.find_element_by_name("group_footer").send_keys("sderty")
         wd.find_element_by_name("submit").click()
-        wd.find_element_by_link_text("group page").click()
-        wd.find_element_by_link_text("Logout").click()
-        self.assertTrue(success)
 
     def open_groups(self, wd):
         wd.find_element_by_link_text("groups").click()
