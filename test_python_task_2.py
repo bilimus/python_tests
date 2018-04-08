@@ -21,7 +21,7 @@ class test_python_group_task_1(unittest.TestCase):
     def test_test_python_group_task_1(self):
         success = True
         wd = self.open_page()
-        self.login(wd)
+        self.login(wd, "admin", "secret")
         self.open_groups(wd)
         self.create_group(wd)
         self.return_page(wd)
@@ -55,7 +55,7 @@ class test_python_group_task_1(unittest.TestCase):
         wd.get("http://localhost/addressbook/")
         return wd
 
-    def login(self, wd, user="admin", password="secret"):
+    def login(self, wd, user, password):
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(user)
