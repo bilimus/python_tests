@@ -55,13 +55,13 @@ class test_python_group_task_1(unittest.TestCase):
         wd.get("http://localhost/addressbook/")
         return wd
 
-    def login(self, wd):
+    def login(self, wd, user="admin", password="secret"):
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys("admin")
+        wd.find_element_by_name("user").send_keys(user)
         wd.find_element_by_name("pass").click()
         wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys("secret")
+        wd.find_element_by_name("pass").send_keys(password)
         wd.find_element_by_xpath("//form[@id='LoginForm']/input[3]").click()
 
     def tearDown(self):
