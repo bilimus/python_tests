@@ -25,8 +25,11 @@ class test_python_group_task_1(unittest.TestCase):
         self.open_groups(wd)
         self.create_group(wd)
         self.return_page(wd)
-        wd.find_element_by_link_text("Logout").click()
+        self.log_out(wd)
         self.assertTrue(success)
+
+    def log_out(self, wd):
+        wd.find_element_by_link_text("Logout").click()
 
     def return_page(self, wd):
         wd.find_element_by_link_text("group page").click()
