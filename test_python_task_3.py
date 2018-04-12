@@ -29,8 +29,11 @@ class test_contact(unittest.TestCase):
             email_1 ='Bill_1@qa.com', email_2 ='Bill_2@qa.com', email_3 ='Bill_2@qa.com', homepage ='IhaveNoPage.com',\
             byear ='2000',ayear='2001', city ='Sim City', phone2 ='+156666666', notes_here ='some notes here'))
 
-        wd.find_element_by_link_text("Logout").click()
+        self.log_out(wd)
         self.assertTrue(success)
+
+    def log_out(self, wd):
+        wd.find_element_by_link_text("Logout").click()
 
     def adding_new_contact(self, wd, contact):
         wd.find_element_by_link_text("add new").click()

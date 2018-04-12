@@ -1,3 +1,4 @@
 [
-  "test_python_task_3.py::test_contact::test_test_contact"
+  "test.py::python_lesson_1_task_1::test_python_lesson_1_task_1",
+  "test.py::python_lesson_1_task_1::test_python_lesson_empty_1_task_1"
 ]
