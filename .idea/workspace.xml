@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6a11c84-189b-4583-bca7-744c938420a1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/lastfailed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_python_task_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_python_task_4.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +17,10 @@
       <file leaf-file-name="test_python_task_4.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_python_task_4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="560">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <element signature="e#24#82#0" expanded="true" />
+                <element signature="e#25#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -217,12 +215,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_python_task_4_py - 2018.04.14 at 23h 11m 06s.xml">
-      <configuration name="py.test in test_python_task_4.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_python_task_4_py - 2018.04.14 at 23h 14m 47s.xml">
-      <configuration name="py.test in test_python_task_4.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_test_python_task_4_py - 2018.04.15 at 00h 04m 29s.xml">
       <configuration name="py.test in test_python_task_4.py" configurationId="tests" />
     </history-entry>
@@ -247,6 +239,12 @@
     <history-entry file="py_test_in_test_python_task_4_py - 2018.04.15 at 00h 54m 38s.xml">
       <configuration name="py.test in test_python_task_4.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_test_python_task_4_py - 2018.04.15 at 00h 55m 58s.xml">
+      <configuration name="py.test in test_python_task_4.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_python_task_4_py - 2018.04.15 at 01h 01m 24s.xml">
+      <configuration name="py.test in test_python_task_4.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -257,7 +255,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31681877" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29335073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -284,7 +282,7 @@
         <state relative-caret-position="580">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#24#82#0" expanded="true" />
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -396,10 +394,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_python_task_4.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state relative-caret-position="560">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#24#82#0" expanded="true" />
+            <element signature="e#25#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
