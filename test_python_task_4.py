@@ -19,6 +19,7 @@ def test_python_lesson_1_task_1(app):
     app.return_to_group_page()
     app.logout()
 
+
 def test_python_lesson_empty_1_task_1(app):
     app.open_home_page()
     app.login(username="admin", password="secret")
