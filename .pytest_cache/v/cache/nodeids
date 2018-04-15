@@ -1,3 +1,4 @@
 [
-  "test_python_task_3.py::test_contact"
+  "test_add_new_group.py::test_add_new_group",
+  "test_add_new_group.py::test_add_new_empty_group"
 ]
