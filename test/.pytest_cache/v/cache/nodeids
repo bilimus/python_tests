@@ -1,0 +1,5 @@
+[
+  "test_add_new_contact.py::test_add_new_contact",
+  "test_add_new_group.py::test_add_new_group",
+  "test_add_new_group.py::test_add_new_empty_group"
+]
