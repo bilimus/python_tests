@@ -1,0 +1,11 @@
+from model.contact import Contact
+
+def test_modify_contact(app):
+    app.session.login(username = "admin", password = "secret")
+    app.contact.modify(Contact(firstname ='Bill***', middlename ='Bill***', lastname ='Imus***', \
+                            nickname ='Billimus***', title = 'QA Tester***', company ='QA Solutions***',\
+                            address ='Somewhere in the Universe***', \
+                            home_phone ='+122222222', mobile ='+13333333', work_phone = '+14444444', fax ='+15555555', \
+                            email_1 ='Bill_1*@qa.com', email_2 ='Bill_2*@qa.com', email_3 ='Bill_3*@qa.com', homepage ='IhaveNoP***age.com', \
+                            byear ='2000', ayear='2001', city ='Sim City***', phone2 ='+156666666', notes_here ='some notes here***'))
+    app.session.logout()
