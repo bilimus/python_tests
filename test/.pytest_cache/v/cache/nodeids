@@ -1,5 +1,6 @@
 [
   "test_modify_group.py::test_modify_first_group",
   "test_modify_group.py::test_modify_first_group_name",
-  "test_modify_group.py::test_modify_first_group_header"
+  "test_modify_group.py::test_modify_first_group_header",
+  "test_modify_group.py::test_modify_first_group_footer"
 ]
