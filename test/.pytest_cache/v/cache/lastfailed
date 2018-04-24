@@ -1,1 +1,13 @@
-{}
+{
+  "test_del_contact.py::test_delete_first_contact": true,
+  "test_modify_contact.py::test_modify_contact_address": true,
+  "test_modify_contact.py::test_modify_contact_ayear": true,
+  "test_modify_contact.py::test_modify_contact_email_2": true,
+  "test_modify_contact.py::test_modify_contact_fax": true,
+  "test_modify_contact.py::test_modify_contact_firstname": true,
+  "test_modify_contact.py::test_modify_contact_homepage": true,
+  "test_modify_contact.py::test_modify_contact_lastname": true,
+  "test_modify_contact.py::test_modify_contact_mobile": true,
+  "test_modify_contact.py::test_modify_contact_phone2": true,
+  "test_modify_contact.py::test_modify_contact_title": true
+}
