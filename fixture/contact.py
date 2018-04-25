@@ -20,6 +20,7 @@ class ContactHelper:
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
+        
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("middlename", contact.middlename)
         self.change_field_value("lastname", contact.lastname)
@@ -51,13 +52,19 @@ class ContactHelper:
 
     def modify(self, contact):
         wd = self.app.wd
+        self.open_contacts_page()
         wd.find_element_by_css_selector('#maintable a[href^="edit.php"]').click()
         self.fill_contact_form(contact)
         wd.find_element_by_name("update").click()
 
     def delete_first_contact(self):
         wd = self.app.wd
+        self.open_contacts_page()
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_css_selector('input[value="Delete"]').click()
         wd.switch_to_alert().accept()
+
+    def open_contacts_page(self):
+        wd = self.app.wd
+        wd.find_element_by_xpath('//div/div[3]/ul/li[1]/a').click()
 
