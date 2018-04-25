@@ -20,7 +20,7 @@ class ContactHelper:
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
-        
+
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("middlename", contact.middlename)
         self.change_field_value("lastname", contact.lastname)
@@ -68,3 +68,12 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_xpath('//div/div[3]/ul/li[1]/a').click()
 
+    def count(self):
+        wd = self.app.wd
+        self.open_contacts_page()
+        return len(wd.find_elements_by_name("selected[]"))
+
+    def check_presence(self, cnt):
+        wd = self.app.wd
+        if self.count() == 0:
+            self.add(cnt)
