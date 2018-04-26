@@ -66,7 +66,8 @@ class ContactHelper:
 
     def open_contacts_page(self):
         wd = self.app.wd
-        wd.find_element_by_xpath('//div/div[3]/ul/li[1]/a').click()
+        if not(wd.current_url == "http://localhost/addressbook/" and len(wd.find_elements_by_css_selector('input[value="Delete"]'))):
+            wd.find_element_by_xpath('//div/div[3]/ul/li[1]/a').click()
 
     def count(self):
         wd = self.app.wd
