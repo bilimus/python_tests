@@ -3,12 +3,16 @@
 
 from model.group import Group
 
+
 def test_add_new_group(app):
-    app.group.open_groups_page()
+    old_groups = app.group.get_group_list()
     app.group.create(Group(name="ccc", header="ccc", footer="ccc"))
-    app.group.return_to_group_page()
+    new_groups = app.group.get_group_list()
+    assert len(old_groups)+1 == len(new_groups)
 
 def test_add_new_empty_group(app):
-    app.group.open_groups_page()
+    old_groups = app.group.get_group_list()
     app.group.create(Group(name="", header="", footer=""))
-    app.group.return_to_group_page()
+    new_groups = app.group.get_group_list()
+    assert len(old_groups) + 1 == len(new_groups)
+
