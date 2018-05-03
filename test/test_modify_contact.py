@@ -1,4 +1,4 @@
-from model.contact import Contact
+'''from model.contact import Contact
 
 def test_modify_new_contact(app):
     old_contacts = app.contact.get_contact_list()
@@ -151,4 +151,7 @@ def test_modify_contact_notes_here(app):
     app.contact.modify(Contact(notes_here='some notes here**'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
+
+
+    '''
 
