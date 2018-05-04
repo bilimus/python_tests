@@ -91,3 +91,16 @@ class ContactHelper:
             lastname = box[1].text
             contacts.append(Contact(firstname=firstname, lastname=lastname, id=id))
         return contacts
+
+    def compare_lists(self, new_contacts, old_contacts):
+
+        if old_contacts[0].id == new_contacts[-1].id:
+            old_list = old_contacts[1:]
+            new_list = new_contacts[:-1]
+        elif old_contacts[0].id == new_contacts[0].id:
+            old_list = old_contacts[1:]
+            new_list = new_contacts[1:]
+        else:
+            old_list = old_contacts
+            new_list = new_contacts
+        return (old_list, new_list)

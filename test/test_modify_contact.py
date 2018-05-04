@@ -1,4 +1,4 @@
-'''from model.contact import Contact
+from model.contact import Contact
 
 def test_modify_new_contact(app):
     old_contacts = app.contact.get_contact_list()
@@ -10,7 +10,8 @@ def test_modify_new_contact(app):
                             byear ='2000', ayear='2001', city ='Sim* City', phone2 ='+156666666', notes_here ='some notes here**'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
-
+    both_contacts = list(app.contact.compare_lists(new_contacts, old_contacts))
+    assert both_contacts[0] == both_contacts[1]
 
 def test_modify_contact_firstname(app):
     old_contacts = app.contact.get_contact_list()
@@ -18,6 +19,8 @@ def test_modify_contact_firstname(app):
     app.contact.modify(Contact(firstname='Bill**'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
+    both_contacts = list(app.contact.compare_lists(new_contacts, old_contacts))
+    assert both_contacts[0] == both_contacts[1]
 
 def test_modify_contact_middlename(app):
     old_contacts = app.contact.get_contact_list()
@@ -32,6 +35,8 @@ def test_modify_contact_lastname(app):
     app.contact.modify(Contact(lastname='Imus**'))
     new_contacts = app.contact.get_contact_list()
     assert len(old_contacts) == len(new_contacts)
+    both_contacts = list(app.contact.compare_lists(new_contacts, old_contacts))
+    assert both_contacts[0] == both_contacts[1]
 
 def test_modify_contact_nickname(app):
     old_contacts = app.contact.get_contact_list()
@@ -153,5 +158,5 @@ def test_modify_contact_notes_here(app):
     assert len(old_contacts) == len(new_contacts)
 
 
-    '''
+
 
