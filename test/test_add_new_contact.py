@@ -11,8 +11,8 @@ def test_add_new_contact(app):
                             home_phone ='+122222222', mobile ='+13333333', work_phone = '+14444444', fax ='+15555555', \
                             email_1 ='Bill_1@qa.com', email_2 ='Bill_2@qa.com', email_3 ='Bill_2@qa.com', homepage ='IhaveNoPage.com', \
                             byear ='2000', ayear='2001', city ='Sim City', phone2 ='+156666666', notes_here ='some notes here'))
+    assert len(old_contacts)+1 == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-    assert len(old_contacts)+1 == len(new_contacts)
     old_list = sorted(old_contacts, key=lambda p: int(p.id))
     new_list = sorted(new_contacts, key=lambda p: int(p.id))
     assert old_list == new_list[:-1]
