@@ -1,26 +1,49 @@
 from model.contact import Contact
+from random import randrange
 
-def test_modify_new_contact(app):
+def test_modify_first_contact(app):
+    contacts = Contact(firstname='Bill test', middlename='Bill**', lastname='Imus**', \
+            nickname='Billimus**', title='QA Tester**', company='QA Solutions**', address='Somewhere in the Universe**', \
+            home_phone='+122222222', mobile='+13333333', work_phone='+14444444', fax='+15555555', \
+            email_1='Bill*_1@qa.com', email_2='Bill*_2@qa.com', email_3='Bill*_3@qa.com', homepage='IhaveNoPage*.com', \
+            byear='2000', ayear='2001', city='Sim* City', phone2='+156666666', notes_here='some notes here**')
+    app.contact.check_presence(contacts)
     old_contacts = app.contact.get_contact_list()
-    app.contact.check_presence(Contact(firstname='Bill test'))
-    app.contact.modify(Contact(firstname ='Bill**', middlename ='Bill**', lastname ='Imus**', \
-                            nickname ='Billimus**', title = 'QA Tester**', company ='QA Solutions**', address ='Somewhere in the Universe**', \
-                            home_phone ='+122222222', mobile ='+13333333', work_phone = '+14444444', fax ='+15555555', \
-                            email_1 ='Bill*_1@qa.com', email_2 ='Bill*_2@qa.com', email_3 ='Bill*_3@qa.com', homepage ='IhaveNoPage*.com', \
-                            byear ='2000', ayear='2001', city ='Sim* City', phone2 ='+156666666', notes_here ='some notes here**'))
+    contacts.id = old_contacts[0].id
+    app.contact.modify(contacts)
     assert len(old_contacts) == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-    both_contacts = list(app.contact.compare_lists(new_contacts, old_contacts))
-    assert both_contacts[0] == both_contacts[1]
+    old_contacts[0] = contacts
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
 
+def test_modify_some_contact(app):
+    contacts = Contact(firstname='Bill test', middlename='Bill**', lastname='Imus**', \
+            nickname='Billimus**', title='QA Tester**', company='QA Solutions**', address='Somewhere in the Universe**', \
+            home_phone='+122222222', mobile='+13333333', work_phone='+14444444', fax='+15555555', \
+            email_1='Bill*_1@qa.com', email_2='Bill*_2@qa.com', email_3='Bill*_3@qa.com', homepage='IhaveNoPage*.com', \
+            byear='2000', ayear='2001', city='Sim* City', phone2='+156666666', notes_here='some notes here**')
+    app.contact.check_presence(contacts)
+    old_contacts = app.contact.get_contact_list()
+    index = randrange(len(old_contacts))
+    contacts.id = old_contacts[index].id
+    app.contact.modify_contacts_by_index(index, contacts)
+    assert len(old_contacts) == app.contact.count()
+    new_contacts = app.contact.get_contact_list()
+    old_contacts[index] = contacts
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+
+'''
 def test_modify_contact_firstname(app):
+    contacts = Contact(firstname='Bill test')
+    app.contact.check_presence(contacts)
     old_contacts = app.contact.get_contact_list()
-    app.contact.check_presence(Contact(firstname='Bill test'))
-    app.contact.modify(Contact(firstname='Bill**'))
+    contacts.id = old_contacts[0].id
+    app.contact.modify(contacts)
     assert len(old_contacts) == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-    both_contacts = list(app.contact.compare_lists(new_contacts, old_contacts))
-    assert both_contacts[0] == both_contacts[1]
+    old_contacts[0] = contacts
+    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contacts, key=Contact.id_or_max)
+
 
 def test_modify_contact_middlename(app):
     old_contacts = app.contact.get_contact_list()
@@ -156,7 +179,7 @@ def test_modify_contact_notes_here(app):
     app.contact.modify(Contact(notes_here='some notes here**'))
     assert len(old_contacts) == app.contact.count()
     new_contacts = app.contact.get_contact_list()
-
+'''
 
 
 
