@@ -2,24 +2,23 @@
 # test_python_task_4
 
 from model.group import Group
-
+from sys import maxsize
 
 def test_add_new_group(app):
     old_groups = app.group.get_group_list()
-    app.group.create(Group(name="ccc", header="ccc", footer="ccc"))
+    group = Group(name="ccc", header="ccc", footer="ccc")
+    app.group.create(group)
     assert len(old_groups)+1 == app.group.count()
+    old_groups.append(group)
     new_groups = app.group.get_group_list()
-    old_list = sorted(old_groups, key=lambda p: int(p.id))
-    new_list = sorted(new_groups, key=lambda p: int(p.id))
-    assert old_list == new_list[:-1]
+    assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
 
-
-#def test_add_new_empty_group(app):
-#    old_groups = app.group.get_group_list()
-#    app.group.create(Group(name="", header="", footer=""))
-#    new_groups = app.group.get_group_list()
-#    assert len(old_groups) + 1 == len(new_groups)
-#    old_list = sorted(old_groups, key=lambda p: int(p.id))
-#    new_list = sorted(new_groups, key=lambda p: int(p.id))
-#    assert old_list == new_list[:-1]
+def test_add_new_empty_group(app):
+    old_groups = app.group.get_group_list()
+    group = Group(name="", header="", footer="")
+    app.group.create(group)
+    assert len(old_groups) + 1 == app.group.count()
+    old_groups.append(group)
+    new_groups = app.group.get_group_list()
+    assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
 
