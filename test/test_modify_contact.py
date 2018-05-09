@@ -3,10 +3,10 @@ from random import randrange
 
 def test_modify_first_contact(app):
     contacts = Contact(firstname='Bill test', middlename='Bill**', lastname='Imus**', \
-            nickname='Billimus**', title='QA Tester**', company='QA Solutions**', address='Somewhere in the Universe**', \
-            home_phone='+122222222', mobile='+13333333', work_phone='+14444444', fax='+15555555', \
-            email_1='Bill*_1@qa.com', email_2='Bill*_2@qa.com', email_3='Bill*_3@qa.com', homepage='IhaveNoPage*.com', \
-            byear='2000', ayear='2001', city='Sim* City', phone2='+156666666', notes_here='some notes here**')
+                       nickname='Billimus**', title='QA Tester**', company='QA Solutions**', address='Somewhere in the Universe**', \
+                       homephone='+122222222', mobilephone='+13333333', workphone='+14444444', fax='+15555555', \
+                       email_1='Bill*_1@qa.com', email_2='Bill*_2@qa.com', email_3='Bill*_3@qa.com', homepage='IhaveNoPage*.com', \
+                       byear='2000', ayear='2001', city='Sim* City', secondaryphone='+156666666', notes_here='some notes here**')
     app.contact.check_presence(contacts)
     old_contacts = app.contact.get_contact_list()
     contacts.id = old_contacts[0].id
@@ -18,10 +18,10 @@ def test_modify_first_contact(app):
 
 def test_modify_some_contact(app):
     contacts = Contact(firstname='Bill test', middlename='Bill**', lastname='Imus**', \
-            nickname='Billimus**', title='QA Tester**', company='QA Solutions**', address='Somewhere in the Universe**', \
-            home_phone='+122222222', mobile='+13333333', work_phone='+14444444', fax='+15555555', \
-            email_1='Bill*_1@qa.com', email_2='Bill*_2@qa.com', email_3='Bill*_3@qa.com', homepage='IhaveNoPage*.com', \
-            byear='2000', ayear='2001', city='Sim* City', phone2='+156666666', notes_here='some notes here**')
+                       nickname='Billimus**', title='QA Tester**', company='QA Solutions**', address='Somewhere in the Universe**', \
+                       homephone='+122222222', mobilephone='+13333333', workphone='+14444444', fax='+15555555', \
+                       email_1='Bill*_1@qa.com', email_2='Bill*_2@qa.com', email_3='Bill*_3@qa.com', homepage='IhaveNoPage*.com', \
+                       byear='2000', ayear='2001', city='Sim* City', secondaryphone='+156666666', notes_here='some notes here**')
     app.contact.check_presence(contacts)
     old_contacts = app.contact.get_contact_list()
     index = randrange(len(old_contacts))
