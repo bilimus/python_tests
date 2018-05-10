@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6a11c84-189b-4583-bca7-744c938420a1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/test/.pytest_cache/v/cache/lastfailed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/test/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +64,8 @@
       <file leaf-file-name="test_phones.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_phones.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="125" selection-start-line="25" selection-start-column="125" selection-end-line="25" selection-end-column="125" />
+            <state relative-caret-position="113">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -311,12 +307,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 08h 44m 54s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 08h 46m 13s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 08h 48m 31s.xml">
       <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
@@ -341,16 +331,23 @@
     <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 11h 14m 51s.xml">
       <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 11h 18m 38s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 11h 25m 29s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.205625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.65319425" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49804434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -748,8 +745,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_phones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="125" selection-start-line="25" selection-start-column="125" selection-end-line="25" selection-end-column="125" />
+        <state relative-caret-position="113">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
