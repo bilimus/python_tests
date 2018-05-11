@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a6a11c84-189b-4583-bca7-744c938420a1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/test/.pytest_cache/v/cache/lastfailed" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/test/.pytest_cache/v/cache/nodeids" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_phones.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_phones.py" afterDir="false" />
     </list>
@@ -15,20 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="group.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/group.py">
+      <file leaf-file-name="test_phones.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_phones.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/session.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+            <state relative-caret-position="140">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -36,50 +29,20 @@
       <file leaf-file-name="contact.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="-200">
               <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contact.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixture/contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3100">
-              <caret line="156" selection-start-line="156" selection-end-line="156" />
+            <state relative-caret-position="305">
+              <caret line="112" column="42" lean-forward="true" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_modify_contact.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test_modify_contact.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixture/application.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-              <folding>
-                <element signature="e#26#84#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_phones.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test_phones.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -124,8 +87,8 @@
         <option value="$PROJECT_DIR$/test/test_modify_contact.py" />
         <option value="$PROJECT_DIR$/test/test_add_new_contact.py" />
         <option value="$PROJECT_DIR$/model/contact.py" />
-        <option value="$PROJECT_DIR$/fixture/contact.py" />
         <option value="$PROJECT_DIR$/test/test_phones.py" />
+        <option value="$PROJECT_DIR$/fixture/contact.py" />
       </list>
     </option>
   </component>
@@ -164,6 +127,11 @@
             <path>
               <item name="python_testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="python_testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_testing" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -195,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test">
+  <component name="RunManager" selected="Python tests.py.test in test_phones.py">
     <configuration name="contact" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -279,8 +247,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.py.test in test" />
         <item itemvalue="Python tests.py.test in test_phones.py" />
+        <item itemvalue="Python tests.py.test in test" />
         <item itemvalue="Python tests.py.test for test_phones.test_phones_on_contact_view_page" />
         <item itemvalue="Python tests.py.test in test_add_new_contact.py" />
         <item itemvalue="Python.contact" />
@@ -309,24 +277,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 11h 18m 38s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 11h 25m 29s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 11h 27m 33s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 22h 39m 59s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 22h 40m 21s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 22h 46m 48s.xml">
-      <configuration name="py.test in test_phones.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_test_phones_py - 2018.05.10 at 22h 51m 34s.xml">
       <configuration name="py.test in test_phones.py" configurationId="tests" />
     </history-entry>
@@ -339,17 +289,35 @@
     <history-entry file="py_test_in_test - 2018.05.11 at 08h 54m 46s.xml">
       <configuration name="py.test in test" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.11 at 09h 07m 04s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.11 at 09h 08m 39s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.11 at 09h 10m 41s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.11 at 09h 11m 06s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.11 at 09h 12m 53s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_phones_py - 2018.05.11 at 09h 21m 18s.xml">
+      <configuration name="py.test in test_phones.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.205625" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.205625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44980443" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3963494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -730,25 +698,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model/contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="-200">
           <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3100">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_phones.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="140">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="112" column="42" lean-forward="true" selection-start-line="112" selection-start-column="42" selection-end-line="112" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
