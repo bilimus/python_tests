@@ -1,7 +1,15 @@
 {
+  "test_add_new_contact.py::test_add_new_contact[None:firstname79l bpwNO:lastnamex]": true,
+  "test_add_new_contact.py::test_add_new_contact[None:firstname:lastnamecr]": true,
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameD:lastname D3 W]": true,
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameToTTjGpNC:lastname]": true,
+  "test_add_new_contact.py::test_add_new_contact[None:firstnamepkEl:lastnameFxhHqt]": true,
+  "test_add_new_group.py::test_add_new_group[None:nameCFIfQbo ]": true,
+  "test_add_new_group.py::test_add_new_group[None:nameZpIM :headerPa s1batcdLg:footer]": true,
+  "test_add_new_group.py::test_add_new_group[None:namenGNV :headerV3rEiVQ0MlhZ2z83 :footerpQZHBms]": true,
+  "test_add_new_group.py::test_add_new_group[None:namewJGYz :header7d 9BPj zy:footer0k Fr8]": true,
   "test_modify_contact.py::test_modify_contact_firstname": true,
   "test_modify_contact.py::test_modify_contact_lastname": true,
   "test_modify_group.py::test_modify_first_group_footer": true,
-  "test_modify_group.py::test_modify_first_group_header": true,
-  "test_phones.py::test_phones_on_contact_view_page": true
+  "test_modify_group.py::test_modify_first_group_header": true
 }

@@ -1,4 +1,8 @@
 [
-  "test_phones.py::test_phones_on_home_page",
-  "test_phones.py::test_phones_on_contact_view_page"
+  "test_add_new_contact.py::test_add_new_contact[None::]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstname:lastnameL 57Y3]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameHel:lastnameBkN]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstname7nq2ia8:lastnameT]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameXAp:lastnameKNV]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameC:lastname G9]"
 ]
