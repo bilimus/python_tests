@@ -2,18 +2,9 @@
 # test_python_task_4
 
 from model.group import Group
-from sys import maxsize
 import pytest
-import random
-import string
+from data.add_group import constant as testdata
 
-def random_string(prefix, maxlen):
-    symbols = string.ascii_letters + string.digits + " "*10
-    return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
-
-testdata = [Group(name="", header="", footer="")] + [\
-    Group(name=random_string("name", 10).strip(), header=random_string("header", 20).strip(), footer=random_string("footer", 20).strip())
-    for i in range(5)]
 
 @pytest.mark.parametrize("group", testdata, ids=[repr(x)for x in testdata])
 
