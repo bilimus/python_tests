@@ -16,6 +16,5 @@
   "test_modify_contact.py::test_modify_contact_firstname": true,
   "test_modify_contact.py::test_modify_contact_lastname": true,
   "test_modify_group.py::test_modify_first_group_footer": true,
-  "test_modify_group.py::test_modify_first_group_header": true,
-  "test_phones.py::test_phones_on_home_page": true
+  "test_modify_group.py::test_modify_first_group_header": true
 }
