@@ -1,8 +1,8 @@
 [
-  "test_add_new_group.py::test_add_new_group[None:::]",
-  "test_add_new_group.py::test_add_new_group[None:name2KJgTMY:headerZ:footerOcS rr DYN]",
-  "test_add_new_group.py::test_add_new_group[None:namec rJD:header:footer W nUk oy5ubg VO3H]",
-  "test_add_new_group.py::test_add_new_group[None:namevG:header:footer]",
-  "test_add_new_group.py::test_add_new_group[None:nameg B:header:footer5vHF  FVa]",
-  "test_add_new_group.py::test_add_new_group[None:name5Q:header7Yn 6MP  pGNPn:footer]"
+  "test_add_new_contact.py::test_add_new_contact[None::]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstname zcF:lastnameCDNl]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameIOeCpw:lastnameZ QFd1Rs]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameQc:lastnameCjo 46]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstname    X5:lastnamedw]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstname4:lastname]"
 ]
