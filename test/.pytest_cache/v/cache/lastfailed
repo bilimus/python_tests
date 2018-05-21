@@ -13,10 +13,13 @@
   "test_add_new_group.py::test_add_new_group[None:nameF  J:header 0VWb:footer8sv8HhPb]": true,
   "test_add_new_group.py::test_add_new_group[None:nameS7  r:header5c65XF7zr4O9y:footer1w7 KcOgYN]": true,
   "test_add_new_group.py::test_add_new_group[None:nameZpIM :headerPa s1batcdLg:footer]": true,
+  "test_add_new_group.py::test_add_new_group[None:namegHsgI :header9qcdzA438Q Le9Kn:footer1VZe]": true,
   "test_add_new_group.py::test_add_new_group[None:namenGNV :headerV3rEiVQ0MlhZ2z83 :footerpQZHBms]": true,
+  "test_add_new_group.py::test_add_new_group[None:namerfr :headeroo Ss CdUTPKA :footerC 1Yv R ]": true,
   "test_add_new_group.py::test_add_new_group[None:namewJGYz :header7d 9BPj zy:footer0k Fr8]": true,
   "test_modify_contact.py::test_modify_contact_firstname": true,
   "test_modify_contact.py::test_modify_contact_lastname": true,
   "test_modify_group.py::test_modify_first_group_footer": true,
-  "test_modify_group.py::test_modify_first_group_header": true
+  "test_modify_group.py::test_modify_first_group_header": true,
+  "test_phones.py::test_phones_on_home_page": true
 }
