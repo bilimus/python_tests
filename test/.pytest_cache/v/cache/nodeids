@@ -1,8 +1,3 @@
 [
-  "test_add_new_group.py::test_add_new_group[None:::]",
-  "test_add_new_group.py::test_add_new_group[None:namerfr :headeroo Ss CdUTPKA :footerC 1Yv R ]",
-  "test_add_new_group.py::test_add_new_group[None:nameC:headerbWo6G1rxQib4TLpMbvE:footerxA]",
-  "test_add_new_group.py::test_add_new_group[None:nameY Nyp7v:headerVJyen  N:footeruw Lp]",
-  "test_add_new_group.py::test_add_new_group[None:namegHsgI :header9qcdzA438Q Le9Kn:footer1VZe]",
-  "test_add_new_group.py::test_add_new_group[None:names6:headerCjyZL9IqAY15w7:footerW  eKoM]"
+  "test_del_group.py::test_delete_some_group"
 ]
