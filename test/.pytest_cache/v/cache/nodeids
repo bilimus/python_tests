@@ -1,24 +1,8 @@
 [
-  "test_add_new_contact.py::test_add_new_contact[None::]",
-  "test_add_new_contact.py::test_add_new_contact[None:firstnamehCzMVWK8:lastnameyrs Q]",
-  "test_add_new_contact.py::test_add_new_contact[None:firstname:lastnameB5fP2u]",
-  "test_add_new_contact.py::test_add_new_contact[None:firstnameurHE:lastnamezoydps]",
-  "test_add_new_contact.py::test_add_new_contact[None:firstname fdFOmD:lastname]",
-  "test_add_new_contact.py::test_add_new_contact[None:firstnamegKo:lastnameAW 5v]",
   "test_add_new_group.py::test_add_new_group[None:::]",
   "test_add_new_group.py::test_add_new_group[None:namerfr :headeroo Ss CdUTPKA :footerC 1Yv R ]",
   "test_add_new_group.py::test_add_new_group[None:nameC:headerbWo6G1rxQib4TLpMbvE:footerxA]",
   "test_add_new_group.py::test_add_new_group[None:nameY Nyp7v:headerVJyen  N:footeruw Lp]",
   "test_add_new_group.py::test_add_new_group[None:namegHsgI :header9qcdzA438Q Le9Kn:footer1VZe]",
-  "test_add_new_group.py::test_add_new_group[None:names6:headerCjyZL9IqAY15w7:footerW  eKoM]",
-  "test_db_matches_ui.py::test_group_list",
-  "test_del_contact.py::test_delete_first_contact",
-  "test_del_contact.py::test_delete_some_contact",
-  "test_del_group.py::test_delete_some_group",
-  "test_modify_contact.py::test_modify_first_contact",
-  "test_modify_contact.py::test_modify_some_contact",
-  "test_modify_group.py::test_modify_group_name",
-  "test_modify_group.py::test_modify_first_group",
-  "test_phones.py::test_phones_on_home_page",
-  "test_phones.py::test_phones_on_contact_view_page"
+  "test_add_new_group.py::test_add_new_group[None:names6:headerCjyZL9IqAY15w7:footerW  eKoM]"
 ]
