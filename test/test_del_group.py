@@ -11,6 +11,9 @@ def test_delete_some_group(app, db):
     assert len(old_groups) - 1 == app.group.count()
     old_groups.remove(group)
     assert old_groups == new_groups
+
+
+
 '''
 from model.group import Group
 from random import randrange
