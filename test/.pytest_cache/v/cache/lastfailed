@@ -15,6 +15,7 @@
   "test_add_new_group.py::test_add_new_group[None:nameZpIM :headerPa s1batcdLg:footer]": true,
   "test_add_new_group.py::test_add_new_group[None:namenGNV :headerV3rEiVQ0MlhZ2z83 :footerpQZHBms]": true,
   "test_add_new_group.py::test_add_new_group[None:namewJGYz :header7d 9BPj zy:footer0k Fr8]": true,
+  "test_del_group.py::test_delete_some_group": true,
   "test_modify_contact.py::test_modify_contact_firstname": true,
   "test_modify_contact.py::test_modify_contact_lastname": true,
   "test_modify_group.py::test_modify_first_group_footer": true,
