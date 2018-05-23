@@ -27,7 +27,8 @@ def random_string(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 testdata = [Group(name="", header="", footer="")] + [
-    Group(name=random_string("name", 10), header=random_string("header", 20), footer=random_string("footer", 20))\
+    Group(name=random_string("name", 10).strip(), header=random_string("header", 20).strip(),
+          footer=random_string("footer", 20).strip())\
     for i in range(n)]
 
 file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f)
