@@ -1,8 +1,8 @@
 [
-  "test_modify_group.py::test_modify_group[None:::]",
-  "test_modify_group.py::test_modify_group[None:nameak 9:headerbJh2sXqlWCU1:footeru nqXi U 9]",
-  "test_modify_group.py::test_modify_group[None:name:headerC1 F:footero jTdnDCyTigDxBZU]",
-  "test_modify_group.py::test_modify_group[None:namez5Yo28tL7:header yE:footerS veaE0hwitd4flQM]",
-  "test_modify_group.py::test_modify_group[None:name5q9:headerI j9Hu:footer2UDKIIp]",
-  "test_modify_group.py::test_modify_group[None:nameavXn9q3:headereJc 2CW:footer9Z0OPyr RL]"
+  "test_add_new_contact.py::test_add_new_contact[None::]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnamehCzMVWK8:lastnameyrs Q]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstname:lastnameB5fP2u]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnameurHE:lastnamezoydps]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstname fdFOmD:lastname]",
+  "test_add_new_contact.py::test_add_new_contact[None:firstnamegKo:lastnameAW 5v]"
 ]

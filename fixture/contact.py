@@ -1,5 +1,6 @@
 from model.contact import Contact
 import re
+import time
 
 class ContactHelper:
 
@@ -12,6 +13,7 @@ class ContactHelper:
         self.fill_contact_form(contact)
         wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
         self.contact_cache = None
+        self.open_contacts_page()
 
     def change_field_value(self, field_name, text):
         wd = self.app.wd
@@ -77,6 +79,21 @@ class ContactHelper:
         wd.find_element_by_css_selector('input[value="Delete"]').click()
         wd.switch_to_alert().accept()
         self.contact_cache = None
+
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.open_contacts_page()
+        self.select_contact_by_id(id)
+        wd.find_element_by_css_selector('input[value="Delete"]').click()
+        wd.switch_to_alert().accept()
+        self.contact_cache = None
+        self.open_contacts_page()
+
+
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("#maintable input[value='%s']" % id).click()
+
 
     def select_contact_by_index(self, index):
         wd = self.app.wd
