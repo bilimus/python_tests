@@ -65,9 +65,23 @@ class ContactHelper:
         wd.find_element_by_name("update").click()
         self.contact_cache = None
 
+    def modify_contacts_by_id(self, id, contact):
+        wd = self.app.wd
+        self.open_contacts_page()
+        self.select_contact_by_id_for_editing(id)
+        self.fill_contact_form(contact)
+        wd.find_element_by_name("update").click()
+        self.contact_cache = None
+
     def select_contact_by_index_for_editing(self, index):
         wd = self.app.wd
         wd.find_elements_by_css_selector('#maintable a[href^="edit.php"]')[index].click()
+
+    def select_contact_by_id_for_editing(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector('#maintable a[href^="edit.php?id=%s"]' % id).click()
+
+
 
     def delete_first_contact(self):
         self.delete_contact_by_index(0)
@@ -109,10 +123,10 @@ class ContactHelper:
         self.open_contacts_page()
         return len(wd.find_elements_by_name("selected[]"))
 
-    def check_presence(self, cnt):
+    def check_presence(self, contact):
         wd = self.app.wd
         if self.count() == 0:
-            self.add(cnt)
+            self.add(contact)
 
     contact_cache = None
 
