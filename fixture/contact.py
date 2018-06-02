@@ -15,6 +15,27 @@ class ContactHelper:
         self.contact_cache = None
         self.open_contacts_page()
 
+    def get_first_contact_id(self):
+        self.open_contacts_page()
+        wd = self.app.wd
+        return wd.find_element_by_css_selector('input[name="selected[]"]').get_attribute('value')
+
+
+    def add_first_contact_to_first_group(self):
+        wd = self.app.wd
+        self.open_contacts_page()
+        self.checked_first_contact(wd)
+        self.checked_contact_added_to_first_group(wd)
+        self.open_contacts_page()
+
+    def checked_contact_added_to_first_group(self, wd):
+        select_items = wd.find_elements_by_css_selector('select[name="to_group"] option')
+        select_items[0].click()
+        wd.find_element_by_css_selector('input[name="add"]').click()
+
+    def checked_first_contact(self, wd):
+        wd.find_element_by_css_selector('input[name="selected[]"]').click()
+
     def change_field_value(self, field_name, text):
         wd = self.app.wd
         if text is not None:
