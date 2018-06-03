@@ -20,6 +20,19 @@ class ContactHelper:
         wd = self.app.wd
         return wd.find_element_by_css_selector('input[name="selected[]"]').get_attribute('value')
 
+    def delete_first_contact_from_group(self):
+        wd = self.app.wd
+        self.open_contacts_page()
+        group_list = wd.find_elements_by_css_selector('select[name="group"] option')
+        group_list[2].click()
+        time.sleep(2)
+        self.checked_first_contact(wd)
+        time.sleep(2)
+        wd.find_element_by_css_selector('input[name="remove"]').click()
+
+        self.open_contacts_page()
+        time.sleep(2)
+
 
     def add_first_contact_to_first_group(self):
         wd = self.app.wd

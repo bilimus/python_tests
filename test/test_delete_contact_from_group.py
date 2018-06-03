@@ -1,15 +1,19 @@
 from fixture.orm import ORMFixture
 from model.group import Group
 from model.contact import Contact
+from model.group import Group
 
 
-def test_add_new_contact_to_first_group(app, db):
+
+def test_delete_contact_from_first_group(app, db):
     if len(db.get_group_list()) == 0:
         app.group.create(Group(name='test'))
-    app.contact.add(Contact(firstname='test'))
-    contact_id = app.contact.get_first_contact_id()
-    group_id = app.group.get_first_group_id()
+    if len(db.get_contact_list()) == 0:
+        app.contact.add(Contact(firstname='test'))
     app.contact.add_first_contact_to_first_group()
+    contact_id = app.contact.get_first_contact_id()
+    app.contact.delete_first_contact_from_group()
+    group_id = app.group.get_first_group_id()
 
     orm_db = ORMFixture(host='127.0.0.1', name='addressbook', user='root', password='')
 
@@ -22,5 +26,5 @@ def test_add_new_contact_to_first_group(app, db):
     finally:
         pass
 
-    assert logic
+    assert not logic
 
