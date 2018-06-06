@@ -41,6 +41,24 @@ class ContactHelper:
         self.checked_contact_added_to_first_group(wd)
         self.open_contacts_page()
 
+    def add_contact_to_group(self,contact_id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        self.select_contact_by_id(contact_id)
+        box = wd.find_element_by_css_selector("select[name='to_group']")
+        box.find_element_by_css_selector("option[value='%s']" % group_id).click()
+        wd.find_element_by_css_selector("input[name='add']").click()
+        self.app.open_home_page()
+
+    def delete_contact_from_group(self, contact_id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        box = wd.find_element_by_css_selector("select[name='group']")
+        box.find_element_by_css_selector("option[value='%s']" % group_id).click()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_css_selector("input[name='remove']").click()
+        self.app.open_home_page()
+
     def checked_contact_added_to_first_group(self, wd):
         select_items = wd.find_elements_by_css_selector('select[name="to_group"] option')
         select_items[0].click()
